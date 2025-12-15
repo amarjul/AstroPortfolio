@@ -1,0 +1,168 @@
+---
+import "../styles/home.css";
+import "../styles/projects.css";
+import "../styles/page-transitions.css";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import { siteConfig } from "../config/site";
+---
+
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Projekte & Zertifikate - {siteConfig.name}</title>
+    <script>
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+      window.scrollTo(0, 0);
+    </script>
+  </head>
+  <body>
+    <Navigation />
+
+    <main class="projects-page">
+      <div class="projects-page-container page-content">
+        <div class="projects-header projects-header-animate">
+          <h1 class="projects-title">{siteConfig.projectsPage.title}</h1>
+          <p class="projects-subtitle">{siteConfig.projectsPage.subtitle}</p>
+        </div>
+
+        <div class="tabs-container projects-content-animate">
+          <button class="tab-button active" data-tab="projects">
+            {siteConfig.projectsPage.tabs.projects}
+          </button>
+          <button class="tab-button" data-tab="certificates">
+            {siteConfig.projectsPage.tabs.certificates}
+          </button>
+        </div>
+
+        <!-- Projects Tab -->
+        <div id="projects-tab" class="tab-content active projects-content-animate">
+          <div class="projects-grid">
+            {siteConfig.projectsPage.projects.map((project) => (
+              <div class={`project-card ${project.featured ? 'featured' : ''}`}>
+                <div class="project-image">
+                  {(
+                    <span>💻</span>
+                  )}
+                </div>
+                <div class="project-content">
+                  <div class="project-header">
+                    <h3 class="project-title">{project.title}</h3>
+                    {project.featured && (
+                      <span class="featured-badge">Featured</span>
+                    )}
+                  </div>
+                  <p class="project-description">{project.description}</p>
+                  <div class="project-technologies">
+                    {project.technologies.map((tech) => (
+                      <span class="tech-tag">{tech}</span>
+                    ))}
+                  </div>
+                  <div class="project-links">
+                    <a href={project.githubLink} target="_blank" rel="noopener noreferrer" class="project-link github">
+                      <span>GitHub</span>
+                      <span>→</span>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <!-- Certificates Tab -->
+        <div id="certificates-tab" class="tab-content projects-content-animate">
+          <div class="certificates-grid">
+            {siteConfig.projectsPage.certificates.map((cert) => (
+              <div class="certificate-card">
+                <div class="certificate-image">
+                  {(
+                    <span>🎓</span>
+                  )}
+                </div>
+                <div class="certificate-content">
+                  <h3 class="certificate-title">{cert.title}</h3>
+                  <div class="certificate-issuer">{cert.issuer}</div>
+                  <div class="certificate-date">{cert.date}</div>
+                  <p class="certificate-description">{cert.description}</p>
+                  <a href={cert.credentialUrl} target="_blank" rel="noopener noreferrer" class="certificate-link">
+                    <span>Zertifikat ansehen</span>
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <Footer />
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        window.scrollTo(0, 0);
+        setTimeout(() => window.scrollTo(0, 0), 0);
+      });
+
+      window.addEventListener("pageshow", (event) => {
+        if (event.persisted) {
+          window.scrollTo(0, 0);
+        }
+      });
+
+      // Page animations
+      document.addEventListener("DOMContentLoaded", () => {
+        const pageContent = document.querySelector(".page-content");
+        if (pageContent) {
+          requestAnimationFrame(() => {
+            pageContent.classList.add("visible");
+          });
+        }
+
+        const header = document.querySelector(".projects-header-animate");
+        if (header) {
+          requestAnimationFrame(() => {
+            header.classList.add("visible");
+          });
+        }
+
+        const contentElements = document.querySelectorAll(".projects-content-animate");
+        contentElements.forEach((element) => {
+          requestAnimationFrame(() => {
+            element.classList.add("visible");
+          });
+        });
+      });
+
+      // Tab functionality
+      document.addEventListener("DOMContentLoaded", () => {
+        const tabButtons = document.querySelectorAll(".tab-button");
+        const tabContents = document.querySelectorAll(".tab-content");
+
+        tabButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            const targetTab = button.getAttribute("data-tab");
+
+            // Remove active class from all buttons and contents
+            tabButtons.forEach((btn) => btn.classList.remove("active"));
+            tabContents.forEach((content) => content.classList.remove("active"));
+
+            // Add active class to clicked button and corresponding content
+            button.classList.add("active");
+            const targetContent = document.getElementById(`${targetTab}-tab`);
+            if (targetContent) {
+              targetContent.classList.add("active");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

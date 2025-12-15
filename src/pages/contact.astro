@@ -13,7 +13,7 @@ import { siteConfig } from "../config/site";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
-    <title>Get In Touch - Astro Blog</title>
+    <title>Kontakt - {siteConfig.name}</title>
     <script>
       // Disable browser scroll restoration and ensure page starts at top
       if ('scrollRestoration' in history) {
@@ -38,7 +38,7 @@ import { siteConfig } from "../config/site";
         <div class="contact-grid">
           <!-- Contact Info Card -->
           <div class="contact-card contact-card-animate">
-            <h2 class="contact-card-title">Contact Info</h2>
+            <h2 class="contact-card-title">Kontaktinfo</h2>
             <div class="contact-info-list">
               <div class="contact-info-item">
                 <div class="contact-icon-wrapper email-icon">
@@ -69,9 +69,6 @@ import { siteConfig } from "../config/site";
                   <div class="contact-info-value">{siteConfig.contact.info.location.value}</div>
                 </div>
               </div>
-            </div>
-            <div class="contact-message-button-wrapper">
-              <a href="/comments" class="contact-message-button">{siteConfig.contact.messageButton}</a>
             </div>
           </div>
 

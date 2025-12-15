@@ -1,114 +1,203 @@
 // Site-wide configuration
 export const siteConfig = {
   // Site metadata
-  name: "Astro Blog",
-  title: "Astro Blog",
-  description: "A modern blog built with Astro",
+  name: "AJ",
+  title: "Portfolio",
+  description: "Ein modernes Portfolio mit Astro",
   
   // Navigation
   navigation: {
     home: "Home",
-    posts: "Posts",
-    contact: "Contact",
-    comments: "Comments",
-  },
+    projects: "Projekte & Zertifikate",
+    career: "Karriere",
+    contact: "Kontakt",
+},
   
   // Hero Section
   hero: {
-    prefix: "I am",
-    name: "Someone Name",
-    intro: "I am a web developer and blogger, passionate about sharing knowledge and building cool things with code.\nWelcome to my portfolio blog!",
-    avatar: "/image/20943608.jpeg",
+    prefix: "Ich bin",
+    name: "Amar Julardzija",
+    intro: "Mein Name ist Amar und ich bin Webentwickler. Auf diesem Portfolio teile ich mein Wissen über Webentwicklung und zeige meine Projekte. Lass dich inspirieren und lerne mit mir neue Technologien kennen!",
+    avatar: "/images/avatar.jpg",
     buttons: {
-      viewPosts: "View Posts",
-      contactMe: "Contact Me",
+      viewProjects: "Meine Projekte",
+      contactMe: "Kontaktiere mich",
     },
     socialLinks: [
-      { name: "Twitter", icon: "/svg/twitter.svg", url: "https://x.com/astrodotbuild" },
-      { name: "LinkedIn", icon: "/svg/linkedin.svg", url: "https://www.linkedin.com/company/astrodotbuild" },
-      { name: "Facebook", icon: "/svg/facebook.svg", url: "https://www.facebook.com/astrodotbuild" },
-      { name: "GitHub", icon: "/svg/github.svg", url: "https://github.com/tomcomtang/astro-cartoon-portfolio" },
+      { name: "Mail", icon: "/svg/outlook.svg", url: "mailto:amar.julardzija@htl-saalfelden.at" },
+      { name: "GitHub", icon: "/svg/github.svg", url: "https://github.com/amarjul" },
     ],
   },
   
   // About Section
   about: {
-    title: "About Me",
-    text: "Hi, I'm Someone, a passionate web developer and blogger. I love exploring new technologies and sharing knowledge with the community. On this blog, you'll find my thoughts on web development, tutorials, and project showcases. I hope my content can inspire others in their coding journey.",
-  },
+    title: "Über mich",
+    text: "Mein Name ist Amar, ich bin 18 Jahre alt und besuche die HTL Saalfelden mit Schwerpunkt IT. Meine Leidenschaft gilt der Softwareentwicklung, besonders im Bereich Webentwicklung. Ich arbeite gerne mit modernen Technologien wie React und Node.js. Neben dem Programmieren interessiere ich mich Fußball und Kampfsport – Hobbys, die mir Teamgeist, Disziplin und Durchhaltevermögen beibringen.",  },
   
   // Contact Page
   contact: {
-    title: "Get In Touch",
-    subtitle: "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.",
+    title: "Melde dich",
+    subtitle: "Hast du ein spannendes Projekt, eine kreative Idee oder möchtest du zusammenarbeiten? Ich freue mich auf deine Nachricht!",
     info: {
       email: {
         label: "Email",
-        value: "tom@example.com",
-        link: "mailto:tom@example.com",
+        value: "amar.julardzija@htl-saalfelden.at",
+        link: "mailto:amar.julardzija@htl-saalfelden.at",
       },
       phone: {
-        label: "Phone",
-        value: "+1 (234) 567-890",
-        link: "tel:+1 (234) 567-890",
+        label: "Telefonnummer",
+        value: "+43 670 6012365",
+        link: "tel:+43 670 6012365",
       },
       location: {
-        label: "Location",
-        value: "San Francisco, CA",
+        label: "Standort",
+        value: "Salzburg, Österreich",
       },
     },
     followMe: {
       title: "Follow Me",
       links: [
-        { name: "Twitter", icon: "/svg/twitter.svg", url: "https://x.com/astrodotbuild" },
-        { name: "LinkedIn", icon: "/svg/linkedin.svg", url: "https://www.linkedin.com/company/astrodotbuild" },
-        { name: "Facebook", icon: "/svg/facebook.svg", url: "https://www.facebook.com/astrodotbuild" },
-        { name: "GitHub", icon: "/svg/github.svg", url: "https://github.com/tomcomtang/astro-cartoon-portfolio" },
+        { name: "GitHub", icon: "/svg/github.svg", url: "https://github.com/amarjul" },
       ],
     },
     footerText: [
       "I typically respond to messages within 24 hours during business days.",
       "Looking forward to hearing from you! 🚀",
     ],
-    messageButton: "💬 Leave a Message",
   },
   
   // Footer
   footer: {
-    copyright: "© 2025 Someone. All rights reserved.",
+    copyright: "© 2025 Amar Julardzija. All rights reserved.",
     links: [
-      { text: "Privacy Policy", url: "#" },
-      { text: "Terms of Service", url: "#" },
-      { text: "Sitemap", url: "#" },
     ],
     github: {
-      text: "Star this project on Github",
-      url: "https://github.com/tomcomtang/astro-cartoon-portfolio",
+      text: "Sehe dir das Projekt auf Github an",
+      url: "https://github.com/amarjul/AstroPortfolio",
     },
   },
   
-  // Posts Page
-  posts: {
-    title: "Blog Posts",
-    subtitle: "Explore our latest articles on web development, design, and technology",
-    searchPlaceholder: "Search posts...",
+ projectsPage: {
+    title: "Projekte & Zertifikate",
+    subtitle: "Eine Übersicht meiner Projekte und erworbenen Zertifikate",
+    tabs: {
+      projects: "Projekte",
+      certificates: "Zertifikate"
+    },
+    projects: [
+      {
+        title: "ChocoLocoParadise",
+        description: "Eine Online-Casino Website mit Javascript und CSS.",
+        technologies: ["Javascript", "CSS"],
+        githubLink: "https://github.com/domifar/ChocoLocoParadise",
+        featured: true
+      },
+      {
+        title: "MBOT",
+        description: "Entwicklung eines Systems zur Fernsteuerung des mBot2-Roboters über eine Website mit Echtzeit-Updates der Sensoren.",
+        technologies: ["React", "CSS"],
+        githubLink: "https://github.com/epicjoni2007/Mbot",
+        featured: true
+      },
+      {
+        title: "Portfolio Website",
+        description: "Eine moderne, responsive Portfolio-Website mit Astro und TypeScript. Features: Blog-System, SEO-Optimierung und smooth Animations.",
+        technologies: ["Astro", "TypeScript", "CSS"],
+        githubLink: "https://github.com/amarjul/AstroPortfolio",
+        featured: false
+      },
+      {
+        title: "Prototype Design Pattern",
+        description: "Ein ausprogrammiertes Design Pattern in C#",
+        technologies: ["C#"],
+        githubLink: "https://github.com/amarjul/Prototype_DesignPattern",
+        featured: false
+      }
+    ],
+    certificates: [
+      {
+        title: "Introduction to Cybersecurity",
+        date: "Januar 2025",
+        description: "Zertifizierung für einen erfolgreich abgeschlossenen Kurs über Cybersecurity",
+        credentialUrl: "https://www.credly.com/badges/a5e050b8-6450-47b9-8bb2-fbd153b718dc",
+      },
+      {
+        title: "Introduction to IoT",
+        date: "Mai 2025",
+        description: "Zertifizierung für einen erfolgreich abgeschlossenen Kurs über IoT",
+        credentialUrl: "https://www.credly.com/badges/4cef3953-454b-47c0-8e37-8eccce29b272",
+      },
+    ]
   },
   
-  // Comments Page
-  comments: {
-    title: "Comments & Discussion",
-    subtitle: "Share your thoughts, questions, or suggestions here. Let's connect and discuss!",
-    guidelines: {
-      title: "Community Guidelines",
-      items: [
-        "Be respectful and constructive in your comments",
-        "No spam, self-promotion, or advertising allowed",
-        "No personal attacks, hate speech, or harassment",
-        "Stay on topic and keep discussions relevant",
-        "No inappropriate, offensive, or illegal content",
-        "Use clear, friendly, and inclusive language",
-      ],
-    },
+  // Career Page
+  career: {
+    title: "Mein Werdegang",
+    subtitle: "Von der Ausbildung bis heute - hier ist meine Reise",
+    timeline: [
+      // Schule
+      {
+        year: "2021 - Heute",
+        role: "HTL Saalfelden",
+        location: "St. Johann im Pongau, Österreich",
+        description: "Entwicklung moderner Webanwendungen mit React, TypeScript und Node.js. Leitung eines Teams von 5 Entwicklern.",
+        type: "education"
+      },
+      {
+        year: "2017 - 2021",
+        role: "MMS Radstadt",
+        location: "Radstadt, Österreich",
+        description: "Entwicklung moderner Webanwendungen mit React, TypeScript und Node.js. Leitung eines Teams von 5 Entwicklern.",
+        type: "education"
+      },
+      {
+        year: "2013 - 2017",
+        role: "Volksschule Radstadt",
+        location: "Radstadt, Österreich",
+        description: "Entwicklung moderner Webanwendungen mit React, TypeScript und Node.js. Leitung eines Teams von 5 Entwicklern.",
+        type: "education"
+      },
+      // Arbeit
+      {
+        year: "2023 - Heute",
+        role: "Spar Landmarkt KG",
+        location: "Altenmarkt, Österreich",
+        description: "Verkäufer, Regalbetreuung, Büroarbeiten",
+        type: "work"
+      },
+      {
+        year: "2025",
+        role: "CADstar Technology GmbH",
+        location: "Bischofshofen, Österreich",
+        description: "Mitarbeit bei der Entwicklung des Intraoral Scanner",
+        type: "work"
+      },
+      {
+        year: "2022",
+        role: "Atomic Austria GmbH",
+        location: "Altenmarkt, Österreich",
+        description: "Produktion Abteilung Finish",
+        type: "work"
+      },
+  
+    ],
+    skills: {
+      title: "Fähigkeiten & Technologien",
+      categories: [
+        {
+          name: "Frontend",
+          items: ["React", "JavaScript", "Bootstrap", "TypeScript", "HTML/CSS", "Astro", "Angular"]
+        },
+        {
+          name: "Backend",
+          items: ["Node.js", "Express", "Python", "PostgreSQL", "MongoDB", "REST APIs"]
+        },
+        {
+          name: "Tools & Andere",
+          items: ["Git", "Docker", "Figma", "VS Code & Community", "Postman"]
+        }
+      ]
+    }
   },
 };
 
