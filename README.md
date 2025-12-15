@@ -6,11 +6,6 @@ A modern, responsive portfolio website built with Astro 5, featuring a beautiful
 
 [![Deploy to Tencent Cloud](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://edgeone.ai/pages/new?template=https://github.com/tomcomtang/astro-cartoon-portfolio&output-directory=./dist&build-command=npm%20run%20build&install-command=npm%20install&entry_from=childtom)
 
-## Preview
-
-You can preview the project online at:
-
-<https://astro-cartoon-portfolio.edgeone.app/>
 
 ## Features
 
