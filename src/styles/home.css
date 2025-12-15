@@ -9,9 +9,9 @@
 :root {
   --border-radius: 4px;
   --color-text: #333;
-  --color-primary: #7026b9;
-  --color-code-bg: #fff4db;
-  --color-code: #8a6534;
+  --color-primary: #2563eb;
+  --color-code-bg: #dbeafe;
+  --color-code: #1e40af;
   --font-sans: "MonaSansExpanded", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji";
@@ -43,7 +43,7 @@
 
 html,
 body {
-  background: #fafdff;
+  background: linear-gradient(120deg, #eff6ff 0%, #dbeafe 100%);
   -webkit-text-size-adjust: 100%;
   font: sans-serif;
   font-size: var(--font-md);
@@ -57,7 +57,7 @@ body {
   word-wrap: break-word;
 }
 
-/* Global typography styles - matching reference site */
+/* Global typography styles */
 h1 {
   letter-spacing: -0.01em;
   line-height: var(--line-height-dense);
@@ -176,17 +176,17 @@ nav {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(250, 253, 255, 0.95);
+  background: rgba(239, 246, 255, 0.95);
   backdrop-filter: blur(10px);
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
-  border-bottom: 1px solid rgba(118, 207, 197, 0.1);
+  box-shadow: 0 2px 20px rgba(37, 99, 235, 0.08);
+  border-bottom: 1px solid rgba(37, 99, 235, 0.1);
 }
 
 .site-name {
   font-weight: 700;
   font-size: 1.5rem;
   letter-spacing: 0.05em;
-  color: #ec6664;
+  color: #2563eb;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -197,7 +197,7 @@ nav {
 }
 
 .site-name:hover {
-  color: #ffb400;
+  color: #1e40af;
   transform: scale(1.08);
 }
 
@@ -220,7 +220,7 @@ nav {
 
 .menu-link {
   font-weight: 700;
-  color: #d48a88;
+  color: #60a5fa;
   text-decoration: none;
   font-size: 1.1rem;
   transition:
@@ -233,17 +233,17 @@ nav {
 }
 
 .menu-link:hover {
-  color: #ec6664;
+  color: #2563eb;
   transform: scale(1.08);
 }
 
 .menu-link.active {
-  color: #ec6664;
+  color: #2563eb;
 }
 
 /* Hero Section */
 .hero-section {
-  background: #fafdff;
+  background: linear-gradient(120deg, #eff6ff 0%, #dbeafe 100%);
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -289,7 +289,7 @@ nav {
 .hero-normal-text {
   font-size: 1.25rem;
   margin: 0;
-  color: #179b8e;
+  color: #0ea5e9;
   font-weight: 600;
   letter-spacing: 0.01em;
 }
@@ -299,7 +299,7 @@ nav {
   font-weight: 800;
   margin: 0;
   line-height: 1.1;
-  background: linear-gradient(90deg, #76cfc5 0%, #ffb400 100%);
+  background: linear-gradient(90deg, #2563eb 0%, #3b82f6 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -328,8 +328,8 @@ nav {
   font-size: 1.15rem;
   font-weight: 700;
   border-radius: 2rem;
-  border: 2px solid #b0c4cc;
-  background: linear-gradient(90deg, #ffe9b2 0%, #76cfc5 100%);
+  border: 2px solid #93c5fd;
+  background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
   color: #fff;
   cursor: pointer;
   transition:
@@ -338,13 +338,13 @@ nav {
     transform 0.2s;
   text-decoration: none;
   display: inline-block;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
 }
 
 .hero-btn:hover {
-  background: linear-gradient(90deg, #76cfc5 0%, #ffe9b2 100%);
+  background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
   transform: scale(1.06);
-  box-shadow: 0 4px 16px rgba(94, 194, 182, 0.18);
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.4);
 }
 
 .hero-btn-alt {
@@ -352,9 +352,9 @@ nav {
   font-size: 1.15rem;
   font-weight: 700;
   border-radius: 2rem;
-  border: 2px solid #b0c4cc;
-  background: linear-gradient(90deg, #eaf6fa 0%, #c7e6f5 100%);
-  color: #179b8e;
+  border: 2px solid #93c5fd;
+  background: linear-gradient(90deg, #dbeafe 0%, #bfdbfe 100%);
+  color: #1e40af;
   cursor: pointer;
   transition:
     background 0.3s,
@@ -362,25 +362,25 @@ nav {
     transform 0.2s;
   text-decoration: none;
   display: inline-block;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.2);
 }
 
 .hero-btn-alt:hover {
-  background: linear-gradient(90deg, #c7e6f5 0%, #eaf6fa 100%);
-  color: #179b8e;
-  border: 2px solid #b0c4cc;
+  background: linear-gradient(90deg, #bfdbfe 0%, #93c5fd 100%);
+  color: #1e40af;
+  border: 2px solid #60a5fa;
   transform: scale(1.06);
-  box-shadow: 0 4px 16px rgba(94, 194, 182, 0.1);
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.3);
 }
 
 .hero-avatar {
-  width: 280px;
-  height: 280px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 24px rgba(37, 99, 235, 0.2);
   margin-bottom: 1.2rem;
-  border: 4px solid #76cfc5;
+  border: 4px solid #3b82f6;
   transition:
     box-shadow 0.3s,
     border-color 0.3s,
@@ -389,8 +389,8 @@ nav {
 
 .hero-avatar:hover {
   transform: scale(1.06);
-  box-shadow: 0 8px 32px rgba(118, 207, 197, 0.18);
-  border-color: #ec6664;
+  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.3);
+  border-color: #2563eb;
 }
 
 .social-list {
@@ -408,7 +408,7 @@ nav {
   justify-content: center;
   border-radius: 0;
   background: none;
-  color: #222;
+  color: #2563eb;
   font-size: 2.2rem;
   text-decoration: none;
   transition: color 0.2s;
@@ -416,7 +416,7 @@ nav {
 }
 
 .social-icon-btn:hover {
-  color: #ec6664;
+  color: #1e40af;
 }
 
 .social-icon-btn img {
@@ -434,9 +434,9 @@ nav {
 .about-section {
   background: linear-gradient(
     135deg,
-    #6dd5c7 0%,
-    #5bc0ae 50%,
-    #4db09e 100%
+    #3b82f6 0%,
+    #2563eb 50%,
+    #1e40af 100%
   );
   width: 100vw;
   min-width: 100vw;
@@ -483,9 +483,9 @@ nav {
 .new-section {
   background: linear-gradient(
     135deg,
-    #f8fafc 0%,
-    #f1f5f9 50%,
-    #e2e8f0 100%
+    #eff6ff 0%,
+    #dbeafe 50%,
+    #bfdbfe 100%
   );
   width: 100vw;
   min-width: 100vw;
@@ -503,9 +503,9 @@ nav {
 .projects-section {
   background: linear-gradient(
     135deg,
-    #f0a868 0%,
-    #ecb993 50%,
-    #e8a87c 100%
+    #60a5fa 0%,
+    #3b82f6 50%,
+    #2563eb 100%
   );
   width: 100vw;
   min-width: 100vw;
@@ -699,8 +699,6 @@ nav {
   margin: 0 auto;
 }
 
-/* Project content styles are now in .project-content-wrapper-inner above */
-
 .project-image-container {
   flex: 1 1 50%;
   display: flex;
@@ -743,8 +741,8 @@ nav {
 }
 
 .technology-tag {
-  background: #edf2f7;
-  color: #4a5568;
+  background: #dbeafe;
+  color: #1e40af;
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
   font-size: 0.9rem;
@@ -775,13 +773,13 @@ nav {
 }
 
 .project-link:hover {
-  color: #f0f0f0;
+  color: #dbeafe;
   transform: translateX(10px);
 }
 
 /* Proficiency Section */
 .proficiency-section {
-  background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+  background: linear-gradient(135deg, #93c5fd 0%, #60a5fa 100%);
   width: 100vw;
   min-width: 100vw;
   position: relative;
@@ -837,29 +835,6 @@ nav {
   font-weight: 700;
   text-align: center;
   margin: 0;
-}
-
-.skill-name-1 {
-  color: #fff;
-}
-
-.skill-name-2 {
-  color: #fff;
-}
-
-.skill-name-3 {
-  color: #fff;
-}
-
-.skill-name-4 {
-  color: #fff;
-}
-
-.skill-name-5 {
-  color: #fff;
-}
-
-.skill-name-6 {
   color: #fff;
 }
 
@@ -891,35 +866,11 @@ nav {
   font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
+  color: #2563eb;
 }
 
 .skill-percentage {
   display: inline-block;
-}
-
-/* Text colors for different skills */
-.skill-color-1 {
-  color: #76cfc5;
-}
-
-.skill-color-2 {
-  color: #ffb400;
-}
-
-.skill-color-3 {
-  color: #ec6664;
-}
-
-.skill-color-4 {
-  color: #ec6664;
-}
-
-.skill-color-5 {
-  color: #76cfc5;
-}
-
-.skill-color-6 {
-  color: #ffb400;
 }
 
 /* Footer */
@@ -929,7 +880,7 @@ footer {
   width: 100vw;
   display: flex;
   align-items: center;
-  box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 -1px 8px rgba(37, 99, 235, 0.08);
   position: relative;
   left: 0;
   margin-top: 0;
@@ -975,7 +926,7 @@ footer {
 }
 
 .footer-github {
-  color: #000;
+  color: #2563eb;
   text-decoration: none;
   padding-bottom: 1px;
   transition: all 0.3s ease;
@@ -991,7 +942,7 @@ footer {
 }
 
 .footer-github:hover {
-  color: #76cfc5;
+  color: #1e40af;
   text-decoration: underline;
   transform: translateY(-2px);
 }

@@ -1,6 +1,6 @@
 /* Projects & Certificates Page Styles */
 body {
-  background: linear-gradient(120deg, #fef3e8 0%, #ffecd1 100%) !important;
+  background: linear-gradient(120deg, #eff6ff 0%, #dbeafe 100%) !important;
   min-height: 100vh;
 }
 
@@ -28,7 +28,7 @@ body {
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 1rem;
-  background: linear-gradient(90deg, #ffb400 0%, #76cfc5 100%);
+  background: linear-gradient(90deg, #2563eb 0%, #3b82f6 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -55,7 +55,7 @@ body {
   padding: 0.75rem 2rem;
   font-size: 1.1rem;
   font-weight: 600;
-  border: 2px solid #ffb400;
+  border: 2px solid #3b82f6;
   border-radius: 30px;
   background: white;
   color: #666;
@@ -65,14 +65,14 @@ body {
 }
 
 .tab-button:hover {
-  background: rgba(255, 180, 0, 0.1);
+  background: rgba(59, 130, 246, 0.1);
   transform: translateY(-2px);
 }
 
 .tab-button.active {
-  background: linear-gradient(90deg, #ffb400 0%, #ff9500 100%);
+  background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
   color: white;
-  box-shadow: 0 4px 16px rgba(255, 180, 0, 0.3);
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.3);
 }
 
 /* Tab Content */
@@ -118,24 +118,24 @@ body {
 
 .project-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 40px rgba(255, 180, 0, 0.2);
+  box-shadow: 0 12px 40px rgba(37, 99, 235, 0.2);
 }
 
 .project-card.featured {
-  border: 2px solid #ffb400;
-  background: linear-gradient(135deg, #fff9f0 0%, #ffffff 100%);
+  border: 2px solid #3b82f6;
+  background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%);
 }
 
 .project-image {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  background: linear-gradient(135deg, #fff4e6 0%, #ffe4b5 100%); /* <-- Bereits da, aber ändere es */
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 4rem;
-  color: #ffb400;
+  color: #3b82f6;
   position: relative;
 }
 
@@ -162,7 +162,7 @@ body {
 }
 
 .featured-badge {
-  background: linear-gradient(90deg, #ffb400 0%, #ff9500 100%);
+  background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
   color: white;
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
@@ -189,12 +189,12 @@ body {
 
 .tech-tag {
   padding: 0.4rem 0.8rem;
-  background: linear-gradient(135deg, #fff4e6 0%, #ffe4b5 100%);
-  color: #666;
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  color: #1e40af;
   border-radius: 16px;
   font-size: 0.85rem;
   font-weight: 500;
-  border: 1px solid #ffd699;
+  border: 1px solid #93c5fd;
 }
 
 .project-links {
@@ -219,25 +219,25 @@ body {
 }
 
 .project-link.github {
-  background: #333;
+  background: #1e293b;
   color: white;
 }
 
 .project-link.github:hover {
-  background: #000;
+  background: #0f172a;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .project-link.live {
-  background: linear-gradient(90deg, #ffb400 0%, #ff9500 100%);
+  background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
   color: white;
 }
 
 .project-link.live:hover {
-  background: linear-gradient(90deg, #ff9500 0%, #ff8500 100%);
+  background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 180, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
 /* Certificates Grid */
@@ -260,19 +260,19 @@ body {
 
 .certificate-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 40px rgba(118, 207, 197, 0.2);
+  box-shadow: 0 12px 40px rgba(14, 165, 233, 0.2);
 }
 
 .certificate-image {
   width: 100%;
   height: 180px;
   object-fit: cover;
-  background: linear-gradient(135deg, #e6f7f5 0%, #d1f0ec 100%);
+  background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 3.5rem;
-  color: #76cfc5;
+  color: #0ea5e9;
 }
 
 .certificate-content {
@@ -291,7 +291,7 @@ body {
 
 .certificate-issuer {
   font-size: 1rem;
-  color: #76cfc5;
+  color: #0ea5e9;
   font-weight: 600;
   margin-bottom: 0.3rem;
 }
@@ -315,7 +315,7 @@ body {
   align-items: center;
   gap: 0.5rem;
   padding: 0.7rem 1.5rem;
-  background: linear-gradient(90deg, #76cfc5 0%, #5ec0b6 100%);
+  background: linear-gradient(90deg, #0ea5e9 0%, #0284c7 100%);
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -326,9 +326,9 @@ body {
 }
 
 .certificate-link:hover {
-  background: linear-gradient(90deg, #5ec0b6 0%, #4db09e 100%);
+  background: linear-gradient(90deg, #0284c7 0%, #0369a1 100%);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(118, 207, 197, 0.3);
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
 }
 
 /* Empty State */

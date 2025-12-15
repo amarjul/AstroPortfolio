@@ -2,7 +2,7 @@
 export const siteConfig = {
   // Site metadata
   name: "AJ",
-  title: "Portfolio",
+  title: "Portfolio - AJ",
   description: "Ein modernes Portfolio mit Astro",
   
   // Navigation
@@ -17,7 +17,7 @@ export const siteConfig = {
   hero: {
     prefix: "Ich bin",
     name: "Amar Julardzija",
-    intro: "Mein Name ist Amar und ich bin Webentwickler. Auf diesem Portfolio teile ich mein Wissen über Webentwicklung und zeige meine Projekte. Lass dich inspirieren und lerne mit mir neue Technologien kennen!",
+    intro: "und bin Webentwickler. Auf diesem Portfolio teile ich mein Wissen über Webentwicklung und zeige meine Projekte. Lass dich inspirieren und lerne mit mir neue Technologien kennen!",
     avatar: "/images/avatar.jpg",
     buttons: {
       viewProjects: "Meine Projekte",
@@ -140,21 +140,21 @@ export const siteConfig = {
         year: "2021 - Heute",
         role: "HTL Saalfelden",
         location: "St. Johann im Pongau, Österreich",
-        description: "Entwicklung moderner Webanwendungen mit React, TypeScript und Node.js. Leitung eines Teams von 5 Entwicklern.",
+        description: "Ausbildung im Bereich Informatik mit Schwerpunkt auf Softwareentwicklung, Webtechnologien, Datenbanken und Netzwerktechnik. Umsetzung praxisnaher Projekte in Einzel- und Teamarbeit.",
         type: "education"
       },
       {
         year: "2017 - 2021",
         role: "MMS Radstadt",
         location: "Radstadt, Österreich",
-        description: "Entwicklung moderner Webanwendungen mit React, TypeScript und Node.js. Leitung eines Teams von 5 Entwicklern.",
+        description: "Allgemeinbildende Schulbildung mit Fokus auf Mathematik, Naturwissenschaften und grundlegenden IT-Kenntnissen.",
         type: "education"
       },
       {
         year: "2013 - 2017",
         role: "Volksschule Radstadt",
         location: "Radstadt, Österreich",
-        description: "Entwicklung moderner Webanwendungen mit React, TypeScript und Node.js. Leitung eines Teams von 5 Entwicklern.",
+        description: "Grundschulbildung mit Schwerpunkt auf grundlegenden schulischen Fähigkeiten wie Lesen, Schreiben und Rechnen.",
         type: "education"
       },
       // Arbeit

@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(120deg, #f0f9ff 0%, #e0f2fe 100%) !important;
+  background: linear-gradient(120deg, #eff6ff 0%, #dbeafe 100%) !important;
   min-height: 100vh;
 }
 
@@ -27,7 +27,7 @@ body {
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 1rem;
-  background: linear-gradient(90deg, #76cfc5 0%, #b4b8f8 100%);
+  background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -71,15 +71,15 @@ body {
 }
 
 .timeline-group-title.education {
-  background: linear-gradient(135deg, #b4b8f8 0%, #9b9ff0 100%);
+  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
   color: white;
-  box-shadow: 0 4px 16px rgba(180, 184, 248, 0.3);
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.3);
 }
 
 .timeline-group-title.work {
-  background: linear-gradient(135deg, #76cfc5 0%, #5ec0b6 100%);
+  background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
   color: white;
-  box-shadow: 0 4px 16px rgba(118, 207, 197, 0.3);
+  box-shadow: 0 4px 16px rgba(14, 165, 233, 0.3);
 }
 
 /* Separate timeline line for each group */
@@ -94,11 +94,11 @@ body {
 }
 
 .timeline-group:first-child .timeline-container::before {
-  background: linear-gradient(180deg, #b4b8f8 0%, #9b9ff0 100%);
+  background: linear-gradient(180deg, #60a5fa 0%, #3b82f6 100%);
 }
 
 .timeline-group:last-child .timeline-container::before {
-  background: linear-gradient(180deg, #76cfc5 0%, #5ec0b6 100%);
+  background: linear-gradient(180deg, #0ea5e9 0%, #0284c7 100%);
 }
 
 .timeline-container {
@@ -114,7 +114,7 @@ body {
   top: 0;
   bottom: 0;
   width: 3px;
-  background: linear-gradient(180deg, #76cfc5 0%, #b4b8f8 50%, #ffb400 100%);
+  background: linear-gradient(180deg, #3b82f6 0%, #2563eb 50%, #0ea5e9 100%);
   border-radius: 2px;
 }
 
@@ -137,16 +137,16 @@ body {
   height: 20px;
   border-radius: 50%;
   border: 3px solid #fff;
-  box-shadow: 0 0 0 3px rgba(118, 207, 197, 0.3);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
   z-index: 1;
 }
 
 .timeline-dot.work {
-  background: linear-gradient(135deg, #76cfc5 0%, #5ec0b6 100%);
+  background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
 }
 
 .timeline-dot.education {
-  background: linear-gradient(135deg, #b4b8f8 0%, #9b9ff0 100%);
+  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
 }
 
 /* Timeline card */
@@ -162,7 +162,7 @@ body {
 
 .timeline-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 32px rgba(118, 207, 197, 0.15);
+  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.15);
 }
 
 /* Arrow pointing to timeline */
@@ -189,11 +189,11 @@ body {
 }
 
 .timeline-year.work {
-  background: linear-gradient(90deg, #76cfc5 0%, #5ec0b6 100%);
+  background: linear-gradient(90deg, #0ea5e9 0%, #0284c7 100%);
 }
 
 .timeline-year.education {
-  background: linear-gradient(90deg, #b4b8f8 0%, #9b9ff0 100%);
+  background: linear-gradient(90deg, #60a5fa 0%, #3b82f6 100%);
 }
 
 .timeline-role {
@@ -206,7 +206,7 @@ body {
 .timeline-company {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #76cfc5;
+  color: #3b82f6;
   margin-bottom: 0.3rem;
 }
 
@@ -261,7 +261,7 @@ body {
   content: '✓';
   position: absolute;
   left: 0;
-  color: #76cfc5;
+  color: #3b82f6;
   font-weight: 700;
   font-size: 1.1rem;
 }
@@ -301,13 +301,13 @@ body {
 
 .skill-category:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 32px rgba(118, 207, 197, 0.15);
+  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.15);
 }
 
 .skill-category-name {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #76cfc5;
+  color: #2563eb;
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -321,20 +321,20 @@ body {
 
 .skill-item {
   padding: 0.6rem 1.2rem;
-  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-  color: #333;
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  color: #1e40af;
   border-radius: 20px;
   font-size: 0.95rem;
   font-weight: 500;
-  border: 1px solid #76cfc5;
+  border: 1px solid #3b82f6;
   transition: all 0.3s ease;
 }
 
 .skill-item:hover {
-  background: linear-gradient(135deg, #76cfc5 0%, #5ec0b6 100%);
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(118, 207, 197, 0.3);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
 /* Responsive Design */
@@ -381,4 +381,4 @@ body {
   .skills-grid {
     grid-template-columns: 1fr;
   }
-} 
+}
